@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(210, 46%, 95%);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 80vh;
+  grid-gap: 20px;
+  width: 85%;
+}
+
+main > div {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 36px 41px 49px -55px rgba(0,0,0,0.75);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info > img {
+  border-radius: 50%;
+  height: 50px;
+  border: 2px solid rgba(255,255,255,.3);
+}
+
+.user-bio {
+  font-size: 9px;
+  margin-left: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.user-bio span {
+  font-size: 15px;
+  opacity: .5;
+}
+
+.short-review p {
+  color: white;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.quote p {
+  color: hsl(210, 46%, 95%);
+  opacity: .5;
+  font-size: 15px;
+}
+
+.different-styles {
+  color: black;
+}
+
+.different-styles p {
+  color: black;
+}
+
+.comment-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1/2;
+  background: hsl(263, 55%, 52%);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 400px top;
+}
+
+.comment-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 1/2;
+  background: hsl(217, 19%, 35%);
+}
+
+.comment-3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row: 1/3;
+  background: hsl(0, 0%, 100%);
+}
+
+.comment-4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 2/3;
+  background: hsl(0, 0%, 100%);
+}
+.comment-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row: 2/3;
+  background: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width: 792px) {
+  main {
+    grid-template-areas:
+                "a"
+                "b"
+                "c"
+                "d"
+                "g";
+    grid-template-columns: 1fr
+
+  }
+  .comment-1 {
+    grid-area: a;
+  }
+  .comment-2 {
+    grid-area: b;
+  }
+  .comment-3 {
+    grid-area: c;
+  }
+  .comment-4 {
+    grid-area: d;
+  }
+  .comment-5 {
+    grid-area: g;
+  }
+}
