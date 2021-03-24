@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 15px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="ip-search">
+        <input
+          type="text"
+          placeholder="Search for any IP address or domain"
+          id="ip"
+        />
+        <button id="btn"><img src="images/icon-arrow.svg" alt="" /></button>
+      </div>
+    </header>
+    <div class="address-details">
+      <div class="col">
+        <span>IP Address</span>
+        <p id="ip-address">192.111.21.2</p>
+      </div>
+      <div class="col">
+        <span>Location</span>
+        <p id="location">Brooklyn, NY</p>
+        <p id="postalCode">10001</p>
+      </div>
+      <div class="col col-3">
+        <span>Timezone</span>
+        <p id="time">UTC-05:00</p>
+      </div>
+      <div class="col">
+        <span>ISP</span>
+        <p id="name">SpaceX</p>
+      </div>
+    </div>
+    <div id="mapid"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
