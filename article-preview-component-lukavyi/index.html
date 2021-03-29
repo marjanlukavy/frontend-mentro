@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__image"></div>
+      <div class="card__descriptipon">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="user-details">
+          <img src="images/avatar-michelle.jpg" class="avatar" alt="" />
+          <div class="user">
+            <h1 class="name">Michelle Appleton</h1>
+            <p class="date">28 Jun 2020</p>
+          </div>
+          <!-- <span class="share"><img src="images/icon-share.svg" alt="" /></span> -->
+          <div class="popup" onclick="myFunction()">
+                    <img class="share-icon" src="https://raw.githubusercontent.com/lynnecodes/FM-articlepreviewcomponent/92b81157a3a4fecbf661a3c4477025b470c6994e/images/icon-share.svg">
+                    <span class="popuptext" id="myPopup">
+                      <div><p>SHARE</p></div>
+                      <div>
+                        <a href="#"><img class="icons" src="https://raw.githubusercontent.com/lynnecodes/FM-articlepreviewcomponent/92b81157a3a4fecbf661a3c4477025b470c6994e/images/icon-facebook.svg"></a>
+                        <a href="#"><img class="icons" src="https://raw.githubusercontent.com/lynnecodes/FM-articlepreviewcomponent/92b81157a3a4fecbf661a3c4477025b470c6994e/images/icon-twitter.svg"></a>
+                        <a href="#"><img class="icons" src="https://raw.githubusercontent.com/lynnecodes/FM-articlepreviewcomponent/92b81157a3a4fecbf661a3c4477025b470c6994e/images/icon-pinterest.svg"></a>
+                      </div>
+                    </span>
+                  </div>
+        </div>
+      </div>
+    </div>
+    <script>
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+    popup.style.display = "flex"
+  }
+</script>
+  </body>
+</html>
