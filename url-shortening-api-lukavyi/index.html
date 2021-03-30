@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Shortly</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item">Features</li>
+          <li class="nav-item">Pricing</li>
+          <li class="nav-item">Resources</li>
+          <li class="nav-item top">Login</li>
+          <li class="signup nav-item">Sign Up</li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar1"></span>
+          <span class="bar1"></span>
+          <span class="bar1"></span>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-information">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button type="button" name="button" class="get-started-btn">
+            Get Started
+          </button>
+        </div>
+      </section>
+      <section class="shorten-url">
+        <div class="shortent-url-field">
+          <input
+            type="text"
+            name=""
+            value=""
+            placeholder="Shorten a link here..."
+            id="url"
+          />
+          <span id="error"></span>
+          <button type="button" name="button" id="btn">
+            Shorten it!
+            <div id="loader" class="loader"></div>
+          </button>
+        </div>
+        <div class="result" id="shortenUrl">
+        </div>
+        <div class="statistics-text">
+          <h1>Advanced Statistics</h1>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+        <div class="props">
+          <div class="col">
+            <div class="icon">
+              <img src="images/icon-brand-recognition.svg" alt="" />
+            </div>
+            <h1>Brand Recognition</h1>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+
+          <div class="bar"></div>
+
+          <div class="col">
+            <div class="icon">
+              <img src="images/icon-detailed-records.svg" alt="" />
+            </div>
+            <h1>Detailed Records</h1>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+
+          <div class="bar"></div>
+
+          <div class="col">
+            <div class="icon">
+              <img src="images/icon-fully-customizable.svg" alt="" />
+            </div>
+            <h1>Fully Customizable</h1>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="get-started">
+        <div class="center">
+          <h1>Boost your links today</h1>
+          <button type="button" name="button" class="get-started-btn">
+            Get Started
+          </button>
+        </div>
+      </section>
+      <footer>
+        <h1 class="logo">Shortly</h1>
+        <nav>
+          <ul>
+            <li>Features</li>
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>Resources</li>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>Company</li>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <ul class="icons">
+          <li><img src="images/f.svg" alt="" /></li>
+          <li><img src="images/t.svg" alt="" /></li>
+          <li><img src="images/p.svg" alt="" /></li>
+          <li><img src="images/i.svg" alt="" /></li>
+        </ul>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
