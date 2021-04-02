@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
+}
+
+section {
+  width: 90%;
+  padding: 3em 3em;
+}
+
+section h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin: .9em 0 .7em 0;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.8;
+  font-size: .9em;
+  margin: .5em 0 1.2em 0;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+section button {
+  border: none;
+  padding: 15px 30px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 25px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 7px 0 0;
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+  cursor: pointer;
+}
+
+.SUVs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.SUVs button {
+  color: hsl(184, 100%, 22%);
+  cursor: pointer;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 7px 7px;
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+  cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  body {
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  section {
+    width: 330px;
+    height: 550px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section img {
+    width: 65px;
+  }
+
+  section h1 {
+    font-size: 2.5em;
+  }
+
+  section button {
+    width: 150px;
+    font-size: 1.1em;
+    margin-top: auto;
+  }
+  section {
+    /* width: 90%; */
+    padding: 3em 3.2em;
+  }
+
+  section p {
+    font-size: 1.1em;
+  }
+
+  .sedans {
+    border-radius: 7px 0 0 7px;
+  }
+
+  .luxury {
+    border-radius: 0 7px 7px 0;
+  }
+
+}
